@@ -4,16 +4,18 @@ html{
     --skew:-45deg;
     --inverse-skew:45deg;
   }
-  html,body{background:black;margin:0;padding:0}
+  /* html,body{background:black;margin:0;padding:0} */
   header,footer{position:fixed;width:100vw;z-index:100;}
   header{top:0;}
-  footer{bottom:0;}
+  footer
+  {bottom:0;}
   .box{height:46vh;width:100%;background:var(--shield-background);transition:ease-out all 1s;transition-delay:1s;}
-  .ready .box{height:3vh;}
-  .curve{display:flex;width:100%;height:4vh;}
+  .ready .box{height:4vh;}
+  .curve{display:flex;width:100%;height:5vh;}
   .left,.right{width:50%;height:100%;background:var(--shield-background);position:relative;}
   .center{width:0;height:100%;transition:ease-out all 1s;}
-  header .left,header .right{border-bottom:1px solid var(--border);}
+  header .left,header .right
+  {border-bottom:1px solid var(--border);}
   header.ready .center{width:100%;border-top:1px solid var(--border);}
   .left > div:nth-child(1),.right > div:nth-child(1){position:absolute;width:100%;height:100%;background:var(--shield-background);}
   header.ready .left > div:nth-child(1){transform:skew(var(--skew)) translateX(6%);border-right:1px solid var(--border);border-bottom:1px solid var(--border);}
